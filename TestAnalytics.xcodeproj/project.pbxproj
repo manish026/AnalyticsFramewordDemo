@@ -7,14 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13E3727A216A5E8F00B76984 /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13E37278216A5E8F00B76984 /* Events.xcdatamodeld */; };
 		13F8C3B5216677C800F2A1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8C3B4216677C800F2A1BD /* AppDelegate.swift */; };
 		13F8C3B7216677C800F2A1BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8C3B6216677C800F2A1BD /* ViewController.swift */; };
 		13F8C3BA216677C800F2A1BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F8C3B8216677C800F2A1BD /* Main.storyboard */; };
 		13F8C3BC216677CB00F2A1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F8C3BB216677CB00F2A1BD /* Assets.xcassets */; };
 		13F8C3BF216677CB00F2A1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F8C3BD216677CB00F2A1BD /* LaunchScreen.storyboard */; };
+		18F0BEB3216CBEB700173643 /* AnalyticsMp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F0BEB2216CBE2B00173643 /* AnalyticsMp.framework */; };
+		18F0BEB4216CBEB700173643 /* AnalyticsMp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18F0BEB2216CBE2B00173643 /* AnalyticsMp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		18F0BEB1216CBE2B00173643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F0BEAA216CBE2A00173643 /* AnalyticsMp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13F8C39221666BCE00F2A1BD;
+			remoteInfo = AnalyticsMp;
+		};
+		18F0BEB5216CBEB700173643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F0BEAA216CBE2A00173643 /* AnalyticsMp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 13F8C39121666BCE00F2A1BD;
+			remoteInfo = AnalyticsMp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13F8C4472169118F00F2A1BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18F0BEB4216CBEB700173643 /* AnalyticsMp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		13E37279216A5E8F00B76984 /* Events.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
 		13F8C3B1216677C800F2A1BD /* TestAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F8C3B4216677C800F2A1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13F8C3B6216677C800F2A1BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +57,7 @@
 		13F8C3BB216677CB00F2A1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13F8C3BE216677CB00F2A1BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13F8C3C0216677CB00F2A1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F0BEAA216CBE2A00173643 /* AnalyticsMp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AnalyticsMp.xcodeproj; path = AnalyticsMp/AnalyticsMp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F0BEB3216CBEB700173643 /* AnalyticsMp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +75,10 @@
 		13F8C3A8216677C800F2A1BD = {
 			isa = PBXGroup;
 			children = (
+				18F0BEAA216CBE2A00173643 /* AnalyticsMp.xcodeproj */,
 				13F8C3B3216677C800F2A1BD /* TestAnalytics */,
 				13F8C3B2216677C800F2A1BD /* Products */,
+				13F8C3DA216679CB00F2A1BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +99,24 @@
 				13F8C3BB216677CB00F2A1BD /* Assets.xcassets */,
 				13F8C3BD216677CB00F2A1BD /* LaunchScreen.storyboard */,
 				13F8C3C0216677CB00F2A1BD /* Info.plist */,
+				13E37278216A5E8F00B76984 /* Events.xcdatamodeld */,
 			);
 			path = TestAnalytics;
+			sourceTree = "<group>";
+		};
+		13F8C3DA216679CB00F2A1BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18F0BEAB216CBE2A00173643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F0BEB2216CBE2B00173643 /* AnalyticsMp.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +129,12 @@
 				13F8C3AD216677C800F2A1BD /* Sources */,
 				13F8C3AE216677C800F2A1BD /* Frameworks */,
 				13F8C3AF216677C800F2A1BD /* Resources */,
+				13F8C4472169118F00F2A1BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18F0BEB6216CBEB700173643 /* PBXTargetDependency */,
 			);
 			name = TestAnalytics;
 			productName = TestAnalytics;
@@ -110,12 +167,28 @@
 			mainGroup = 13F8C3A8216677C800F2A1BD;
 			productRefGroup = 13F8C3B2216677C800F2A1BD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18F0BEAB216CBE2A00173643 /* Products */;
+					ProjectRef = 18F0BEAA216CBE2A00173643 /* AnalyticsMp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13F8C3B0216677C800F2A1BD /* TestAnalytics */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18F0BEB2216CBE2B00173643 /* AnalyticsMp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AnalyticsMp.framework;
+			remoteRef = 18F0BEB1216CBE2B00173643 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13F8C3AF216677C800F2A1BD /* Resources */ = {
@@ -137,10 +210,19 @@
 			files = (
 				13F8C3B7216677C800F2A1BD /* ViewController.swift in Sources */,
 				13F8C3B5216677C800F2A1BD /* AppDelegate.swift in Sources */,
+				13E3727A216A5E8F00B76984 /* Events.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F0BEB6216CBEB700173643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AnalyticsMp;
+			targetProxy = 18F0BEB5216CBEB700173643 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		13F8C3B8216677C800F2A1BD /* Main.storyboard */ = {
@@ -281,9 +363,15 @@
 		13F8C3C4216677CB00F2A1BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USJQ28Q29N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AnalyticsMp",
+				);
 				INFOPLIST_FILE = TestAnalytics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +387,15 @@
 		13F8C3C5216677CB00F2A1BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USJQ28Q29N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AnalyticsMp",
+				);
 				INFOPLIST_FILE = TestAnalytics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +430,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		13E37278216A5E8F00B76984 /* Events.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13E37279216A5E8F00B76984 /* Events.xcdatamodel */,
+			);
+			currentVersion = 13E37279216A5E8F00B76984 /* Events.xcdatamodel */;
+			path = Events.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 13F8C3A9216677C800F2A1BD /* Project object */;
 }

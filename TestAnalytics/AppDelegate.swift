@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AnalyticsMp
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AnalyticsMP.shared.initializeSdk(with: "XXXXX", userId: "Manish")
+        let identify = Identify()
+        identify.set(name: nil, id: nil, gender: "Male", age: 20)
+        
         return true
     }
 

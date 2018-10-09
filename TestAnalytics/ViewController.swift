@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AnalyticsMp
 
 class ViewController: UIViewController {
 
@@ -16,5 +17,20 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func sendEventClicked(_ sender: Any) {
+        
+        log(event: Event(name: "button1", value: "hello"))
+        
+    }
+    
+    @IBAction func deleteAll(_ sender: UIButton) {
+        
+        log(event: Event(name: "button2", value: "hello"))
+        
+    }
+    
+    
 }
+
+
 
